@@ -1,0 +1,54 @@
+.divcontenedor
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.time {
+    width: 0%;
+    height: 25px;
+    background-color: yellow;
+    animation-name: animation;
+    animation-duration: 10s;
+  }
+  
+@keyframes animation {
+    from {
+        width: 0%;
+        background-color: yellow;
+    }
+    to {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+.divfor{
+    display: inline-flex;
+    margin: 3%;
+    font-size: 350%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00404B;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.divfor button
+{
+    border: 5px solid #d0d0d0;
+}
+
+#divdata.divfor
+{
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px #999;
+    width: 100px;
+    height: 90px;
+    align-content: center;
+}
+
+.divtext{
+    margin: 4%;
+}

@@ -1,0 +1,13 @@
+.divcontenedor
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divtext
+{
+    font-size: 400%;
+    font-weight: bold;
+}

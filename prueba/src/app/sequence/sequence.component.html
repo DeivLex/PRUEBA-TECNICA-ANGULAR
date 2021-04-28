@@ -1,0 +1,20 @@
+<div class="divcontenedor">
+    <div class="time"  *ngIf="checkVisiblity == 'Y'">
+    </div>
+    <div class="divtext">
+        <h2>Completa la secuencia</h2>
+    </div>
+    <div>
+        <div style="display: inline;" *ngFor="let item of data; index as i;">
+            <div  class="divfor" *ngIf="item != 0">
+                {{item}}
+            </div>
+            <div class="divfor" id="divdata" *ngIf="item == 0">
+                <button id="divdata1" type="button" class="btn btn-light" (click)="isCorrect(elements[0])">{{elements[0]}}</button>
+                <button id="divdata2" type="button" class="btn btn-light" (click)="isCorrect(elements[1])">{{elements[1]}}</button>
+                <button id="divdata3" type="button" class="btn btn-light" (click)="isCorrect(elements[2])">{{elements[2]}}</button>
+            </div>
+            <img *ngIf="i != 6" src="../../assets/arrow-right.svg" style="width: 40px; vertical-align: baseline;">
+        </div>
+    </div>
+</div>
