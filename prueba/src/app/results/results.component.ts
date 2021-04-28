@@ -12,6 +12,7 @@ export class ResultsComponent implements OnInit {
   constructor(private dataservice: DataService) { }
 
   ngOnInit(): void {
+    // Asigna el valor del desempeño a la variable total
     this.total = this.dataservice.results;
   }
 

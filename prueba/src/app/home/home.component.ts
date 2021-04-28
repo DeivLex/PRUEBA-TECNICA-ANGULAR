@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    // Resetea la variable del punteo a 0
     this.dataservice.results = 0;
   }
 }
